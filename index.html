@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CK Restaurante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-warning-subtle">
+      <div class="container-fluid">
+        <h1 href="#" class="titulo">SEJA BEM VINDO AO CK RESTAURANTE</h1>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  <ul class="mensagemErro list-group"></ul>
+
+  <!-- ------------------ -->
+
+  <section class="container">
+    <!-- --------------------  -->
+    <div class="w-75 m-auto bg-body-secondary p-5 rounded-3">
+      <h3>Faça seu pedido aqui!!!</h3>
+      <form class="formAdd">
+        <!-- --------------------  -->
+        <div class="mb-3">
+          <label for="nome" class="form-label"> Seu Nome:</label>
+          <input id="nome" name="nome" type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="cargo" class="form-label">Seu pedido:</label>
+          <input id="cargo" name="cargo" type="text" class="form-control">
+        </div>
+
+        
+
+        <div class="mb-3">
+          <label for="time" class="form-label">Sua bebida</label>
+          <select name="time" id="time" class="form-select">
+            <option selected disabled>Selecione sua Bebida</option>
+            <option value="fullStack">Coca-cola</option>
+            <option value="frontEnd">Fanta-Laranja</option>
+            <option value="backEnd">Guaraná</option>
+            <option value="dataScience">Suco de laranja</option>
+            <option value="mobile">Água com gás</option>
+            <option value="uxEDesign">Nenhuma bebida</option>
+          </select>
+        </div>
+
+        <button type="submit" id="botaoAdicionar" class="btn btn-success btn-lg w-25">Enviar</button>
+        <!-- --------------------  -->
+      </form>
+    </div>
+    <!-- --------------------  -->
+  </section>
+
+  <section class="container p-5">
+    <h2 class="text-center text-success">Acompanhe seu pedido Aqui!</h2>
+  </section>
+
+  <section class="bg-warning-subtle w-100">
+    <div class="container">
+      <h3 class="text-center text-danger mb-5">Pedido 1</h3>
+      <div class="row fullStack">
+        <div class="col-md-3">
+          <figure class="card">
+            <img src="assets/img/feijao.avif" class="rounded-circle">
+            <figcaption>
+              <h4 class="text-danger text-center">Feijoada</h4>
+              <p class="text-danger text-center">1 feijoada completa: 25R$ </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+  <script src="assets/js/script.js"></script>
+  <!------------------------ Links js ------------------------>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
